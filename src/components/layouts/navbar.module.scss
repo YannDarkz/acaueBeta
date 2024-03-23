@@ -1,0 +1,11 @@
+.container_nav{
+    ul{
+        display: flex;
+        gap: 1vw;
+    }
+
+    ul li:nth-child(1) {
+        list-style: disc;
+        color: gold;
+    }
+}
