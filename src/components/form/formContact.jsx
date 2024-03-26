@@ -1,7 +1,7 @@
 
 import firebaseConfig from '../../../firebaseConfig';
 import {addDoc, collection, getDocs, getFirestore, doc, deleteDoc} from 'firebase/firestore'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useUsers } from '../contexts/usersContext';
 
 
@@ -27,22 +27,19 @@ const FormContact = () => {
     const userColletionRef = collection(db, "users")
 
     useEffect(()=>{
+        
         const getUsers = async () =>{
             const data = await getDocs(userColletionRef)
-            setUsers(data.docs.map(doc =>({ ...doc.data(), id : doc.id })))
+            console.log("DATAZZIS",data)
+            setUsers(data.docs.map(doc =>({ ...doc.data(), id: doc.id })))
         }
         getUsers()
-
-    },[users])
+        console.log("desmontademo")
+    },[])
 
     const createUser = async (data) =>{
         const user = await addDoc(userColletionRef , data);
     }
-
-    //  const deleteUser = async (id) => {
-    //     const userDoc = doc(db, 'user', id)
-    //     await deleteDoc(userDoc)
-    // }
 
     const handleSubmitForm = async (data) => {
         try {   
@@ -63,11 +60,11 @@ const FormContact = () => {
                 type="text"
                 placeHolder="Nome e Sobrenome"
                 text="Nome"
-                {...register('nome', {
+                {...register('name', {
                     required: "Campo obrigatório",
                 })}
             />
-            {errors.nome && <p>{errors.nome.message}</p>}
+            {errors.name && <p>{errors.name.message}</p>}
             <Input
                 name="email"
                 type="email"

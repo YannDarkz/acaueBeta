@@ -4,6 +4,7 @@ import FormContact from './components/form/formContact'
 import CardUsers from './components/layouts/cardUsers';
 import { useUsers } from './components/contexts/usersContext';
 import {deleteUser} from './components/form/formContact'
+import Carousel from './components/layouts/carrousel';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Header />
+      <Carousel/>
       <FormContact />
       <CardUsers users={users} deleteUser={deleteUser}/>
      
