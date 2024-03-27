@@ -1,8 +1,5 @@
 import styles from './card_users.module.scss';
 
-// import { useUsers } from '../contexts/usersContext';
-
-
 const CardUsers = ({ users, deleteUser }) => {
    
 
