@@ -1,0 +1,24 @@
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+
+    li {
+        .img_wpp {
+            background-color: #fff;
+            width: 2vw;
+        }
+
+        .img_insta {
+            background-color: #fff;
+            width: 2vw;
+        }
+
+        .img_behance {
+            background-color: #fff;
+            width: 2vw;
+        }
+
+    }
+
+}

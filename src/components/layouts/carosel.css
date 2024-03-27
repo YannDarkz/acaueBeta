@@ -1,4 +1,6 @@
-
+.container_slide{
+    margin: 0 0 10vh 0;
+}
  .swiper-pagination-bullet{
     height: 3px;
     border-radius: 0;

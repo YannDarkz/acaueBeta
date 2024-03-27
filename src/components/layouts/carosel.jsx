@@ -43,7 +43,7 @@ const Carosel = () => {
     }, [])
 
     return (
-        <div>
+        <div  className="container_slide">
             <Swiper
                 slidesPerView={preview}
                 pagination={{ clickable: true }}

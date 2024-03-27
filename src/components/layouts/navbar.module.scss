@@ -1,11 +1,18 @@
 .container_nav{
+    display: flex;
     ul{
         display: flex;
         gap: 1vw;
     }
 
-    ul li:nth-child(1) {
+    .navigation li:nth-child(1) {
         list-style: disc;
         color: gold;
+    }
+
+    .navigation li:last-child {
+        padding-right: 2vw;
+        border-right: 2px solid #fff;
+        margin-right: 2vw;
     }
 }
