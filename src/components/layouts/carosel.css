@@ -1,18 +1,48 @@
 .container_slide{
     margin: 0 0 10vh 0;
 }
+
+.container_slide p {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    color: gold;
+}
+.container_slide p span{
+    display: block;
+    height: 2px;
+    width: 93%;
+    background-color: gold;
+}
+
+.container_slide h2 {
+    margin-bottom: 5vh;
+}
+
+.container_slide .btn_projetos {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 3vh;
+    border: 1px solid gold;
+    padding: 0.3rem 0;
+    font-weight: 600;
+    background-color: black;
+    color: #fff;
+}
+
  .swiper-pagination-bullet{
     height: 3px;
     border-radius: 0;
 }
 
 .swiper-slide{
-    margin: 0 3px;
+    
 }
 
 .slide-item{
-    width: 100%;
+    width: 98%;
     height: 150px;
     border: solid 2px gold;
+    border-radius: 1rem;
 }
 

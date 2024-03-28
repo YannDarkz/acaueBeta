@@ -44,6 +44,8 @@ const Carosel = () => {
 
     return (
         <div  className="container_slide">
+            <p>Portfólio <span></span> </p>
+            <h2>Identidade Visual</h2>
             <Swiper
                 slidesPerView={preview}
                 pagination={{ clickable: true }}
@@ -61,6 +63,8 @@ const Carosel = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <button className='btn_projetos'>Veja todos os projetos</button>
         </div>
 
     )

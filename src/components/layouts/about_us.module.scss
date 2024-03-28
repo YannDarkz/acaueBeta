@@ -1,8 +1,40 @@
 .about_container {
-    border: 1px solid gold;
     margin-bottom: 5vh;
     min-height: 25vh;
+    
+}
+
+.about_container p {
     display: flex;
-    justify-content: center;
+    color: gold;
+    gap: 1vw;
     align-items: center;
+}
+
+.about_container p span {
+    width: 93%;
+    height: 2px;
+    background-color: gold;
+}
+
+.about_container h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 4vh;
+}
+
+.about_container h2 {
+    font-size: 2rem;
+    margin-bottom: 4vh;
+    letter-spacing: 0.5px;
+}
+
+.about_container h2 span {
+    color: gold;
+}
+
+.about_container ul {
+    display: flex;
+    gap: 3vw;
+    
 }
