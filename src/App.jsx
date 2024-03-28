@@ -1,38 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from './components/layouts/header'
-import MainTitle from './components/layouts/mainTitle';
-import Carosel from './components/layouts/carosel';
-import AboutUs from './components/layouts/aboutUs';
-import FeedBack from './components/layouts/feedBack';
-import FormContact from './components/form/formContact'
+import Home from './components/pages/Home';
+import Portfolio from './components/pages/Portfolio';
+import Project from './components/pages/ProjectSingle';
 import SocialMedia from './components/layouts/socialMedia';
-import CardUsers from './components/layouts/cardUsers';
-
-import { useUsers } from './components/contexts/usersContext';
-import {deleteUser} from './components/form/formContact'
-
-
-
 
 
 function App() {
-  const { users } = useUsers()
-
-
 
   return (
-    <>
+    <Router>
       <Header />
-      <MainTitle />
-      <Carosel/> 
-      <AboutUs />
-      <FeedBack />
-      <FormContact />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route  path="/portfolio" element={<Portfolio />} />
+        <Route  path="/project/:id" element={<Project />} />
+      </Routes>
       <SocialMedia />
-      {/* <CardUsers users={users} deleteUser={deleteUser}/> */}
-     
-    </>
+    </Router>
   )
 }
 
