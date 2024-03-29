@@ -4,8 +4,11 @@ import styles from './about_us.module.scss'
 const AboutUs = () => {
 
     return (
-        <div className={styles.about_container}>
-            <p >Sobre nós <span></span></p>
+        <div id="about" className={styles.about_container}>
+            <div >
+                <p className={styles.title_about}>Sobre nós</p>
+                <span></span>
+            </div>
 
             <h3>Conheça nossa História</h3>
 

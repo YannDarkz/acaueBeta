@@ -1,18 +1,44 @@
 .container_nav{
     display: flex;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.4s ease-in-out;
+    }
+
+    a:visited {
+        color: gold;
+    }
+
+    a:hover {
+        color: yellowgreen;
+       
+    }
+
+    
+
     ul{
         display: flex;
         gap: 1vw;
     }
 
     .navigation li:nth-child(1) {
-        list-style: disc;
-        color: gold;
+        list-style:disc ;
+        color: yellowgreen;
+        height: max-content;
     }
+
+    .navigation li:nth-child(1):hover {
+        list-style: circle ;
+        
+    }
+
 
     .navigation li:last-child {
         padding-right: 2vw;
         border-right: 2px solid #fff;
         margin-right: 2vw;
+        height: max-content;
     }
 }

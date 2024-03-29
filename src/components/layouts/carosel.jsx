@@ -38,13 +38,16 @@ const Carosel = () => {
             }
         }
         handleResize()
-        window.addEventListener( 'resize', handleResize )
+        window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
 
     return (
-        <div  className="container_slide">
-            <p>Portfólio <span></span> </p>
+        <div className="container_slide">
+            <div className='title_port'>
+                <p>Portfólio</p>
+                <span></span>
+            </div>
             <h2>Identidade Visual</h2>
             <Swiper
                 slidesPerView={preview}

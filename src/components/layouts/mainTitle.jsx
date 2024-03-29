@@ -4,7 +4,7 @@ import styles from './main_title.module.scss'
 const MainTitle = () => {
 
     return (
-        <div className={styles.container_main}>
+        <div  className={styles.container_main}>
 
             <div className={styles.container_title}>
                 <h1>Olá! Me chamo <br /> Acuae Emanuel</h1>

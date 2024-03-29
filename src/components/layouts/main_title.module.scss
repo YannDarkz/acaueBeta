@@ -20,14 +20,27 @@
         margin-bottom: 3vh;
     }
 
-    .container_title .btn_contato {
+    .container_title {
+    
+    .btn_contato {
         width: 80%;
         border-radius: 1rem;
-        background-color: black;
+        background: rgb(188,191,14);
+        background: linear-gradient(90deg, rgba(188,191,14,0.7068702290076336) 22%, rgba(0,0,0,0.16335877862595416) 55%, rgba(175,191,19,0.5114503816793894) 100%);
         color: #fff;
         padding: 0.5vh 0;
         border: 1px solid gold;
         font-weight: 600;
-
+        transition: 0.4s ease-in-out;
     }
+
+        .btn_contato:hover{
+            cursor: pointer;
+           background-color: gold;
+           
+
+        }
+    }
+
+
 }

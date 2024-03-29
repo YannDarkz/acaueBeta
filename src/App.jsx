@@ -5,7 +5,7 @@ import Header from './components/layouts/header'
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Project from './components/pages/ProjectSingle';
-import SocialMedia from './components/layouts/socialMedia';
+import Footer from './components/layouts/footer';
 
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route  path="/portfolio" element={<Portfolio />} />
-        <Route  path="/project/:id" element={<Project />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/project/:id" element={<Project />} />
       </Routes>
-      <SocialMedia />
+      <Footer />
     </Router>
   )
 }
