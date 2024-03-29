@@ -73,7 +73,7 @@ const FormContact = () => {
                         required: "Campo obrigatório",
                     })}
                 />
-                {errors.name && <p>{errors.name.message}</p>}
+                {errors.name && <p className={styles.required}>{errors.name.message}</p>}
                 <Input
                     name="email"
                     type="email"
@@ -83,7 +83,7 @@ const FormContact = () => {
                         required: "Campo obrigatório",
                     })}
                 />
-                {errors.email && <p>{errors.email.message}</p>}
+                {errors.email && <p className={styles.required}>{errors.email.message}</p>}
                 <TextArea
                     name="message"
                     text="Mensagem"
@@ -92,7 +92,7 @@ const FormContact = () => {
                         required: "Campo obrigatório",
                     })}
                 />
-                {errors.message && <p>{errors.message.message}</p>}
+                {errors.message && <p className={styles.required}>{errors.message.message}</p>}
                 <SubmitButton
                     text="Enviar" />
 
