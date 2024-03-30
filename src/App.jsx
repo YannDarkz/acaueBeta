@@ -9,7 +9,7 @@ import Footer from './components/layouts/footer';
 
 
 function App() {
-//teste
+
   return (
     <Router>
       <Header />
